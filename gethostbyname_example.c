@@ -3,6 +3,11 @@
 
 
 int main(int argc, char *argv[]){
+    if (argc < 1){
+        printf("This Takes 1 Arrgument 0 given Example: ./gethostbyname_example.exe www.google.com");
+        return 1;
+    }
+
     WSADATA wsa;
     WSAStartup(MAKEWORD(2,0), &wsa);
 
